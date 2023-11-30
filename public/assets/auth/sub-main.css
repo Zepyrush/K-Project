@@ -1,0 +1,158 @@
+
+.title {
+    text-transform: uppercase;
+    color: #1F7A8E;
+    font-weight: bold !important;
+    position: relative;
+    top: 7px;
+}
+
+.form-control.is-invalid, .form-control.is-valid {
+    background-position: center right calc(1.1em + 0.1875rem) !important;
+}
+
+.text-primary {
+    color: #1F7A8E !important;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #1F7A8E !important;
+    border-color: transparent !important;
+}
+
+@media (max-width: 767.98px) {
+    .login-wrap {
+        border-top: 5px solid #1F7A8E;
+    }
+}
+
+.img-form {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 16px;
+}
+
+.social-media {
+    position: relative;
+    width: 100%;
+}
+
+.social-media .social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #1F7A8E;
+    font-size: 16px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.social-media .social-icon span {
+    color: #1F7A8E;
+}
+.social-media .social-icon:hover,
+.social-media .social-icon:focus {
+    background: #1f7a8e;
+}
+.social-media .social-icon:hover span,
+.social-media .social-icon:focus span {
+    color: #fff;
+}
+
+.btn:is([data-dismiss="modal"]) {
+    border-radius: 5px;
+}
+
+.info-login-user {
+    line-height: 1.3;
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none !important;
+}
+
+.form-control {
+    border: 1px solid #1F7A8E;
+    background-color: #fff;
+}
+
+.form-group .label {
+    letter-spacing: .5px !important;
+}
+
+.checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "\f0c8";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    margin-top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+    .checkmark:after {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+/* Show the checkmark when checked */
+.checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    color: rgba(0, 0, 0, 0.2);
+}
+
+/* Style the checkmark/indicator */
+.checkbox-primary {
+    color: #1f7a8e;
+}
+.checkbox-primary input:checked ~ .checkmark:after {
+    color: #1f7a8e;
+}

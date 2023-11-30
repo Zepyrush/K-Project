@@ -1,0 +1,35 @@
+tr.satu {
+    background-color: #c8c8c8;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+th {
+    font-size: 15px;
+}
+
+.table.cetak_hasil td,
+.table.cetak_hasil th {
+    padding: 1px 10px !important;
+    vertical-align: middle !important;
+    line-height: 1.3 !important;
+}
+
+.table.cetak_hasil th {
+    white-space: nowrap !important;
+}
+
+.break {
+    white-space: normal !important;
+    width: auto;
+}
+
+img[alt="logo"] {
+    width: 100px !important;
+}
+
+img {
+    width: 200px !important;
+}
